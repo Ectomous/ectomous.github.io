@@ -1,1 +1,186 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="./assets/css-reset.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="media-header">
+      <span class="media-header__line">
+      </span>
+      <div class="media-header__links">
+        <a href="https://github.com/ectomous" class="media">
+          <img src="./assets/images/icon/github-icon.svg" alt="GitHub Icon" class="media__icon">
+        </a>
+        <a href="https://www.linkedin.com/in/eric-mescouto/" class="media">
+          <img src="./assets/images/icon/linkedin-icon.svg" alt="Linkedin Icon" class="media__icon">
+        </a>
+        <a href="mailto:h.ericmescouto@gmail.com" class="media">
+          <img src="./assets/images/icon/mail-icon.svg" alt="Email Icon" class="media__icon">
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__content">
+        <a href="#hero">
+          <span class="header__name "><span class="highlight-color">${</span>Eric Mescouto<span class="highlight-color">}</span></span>
+        </a>
+        <div class="header__links">
+          <a href="#about-me" class="header__link">Sobre mim</a>
+          <a href="#experiences" class="header__link">Experiências</a>
+          <a href="#languages" class="header__link">Idiomas</a>
+          <a href="#company-ranking" class="header__link">Ranking de Empresas</a>
+          <a href="#contact" class="header__link">Contato</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container content">
+    <section id="hero">
+      <div class="hero__illustrations">
+        <img src="./assets/images/img/profile-image.jpg" alt="Imagem do criador do Portfólio" class="hero__image">
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">Meu nome é <span class="highlight-color">Eric</span> e sou um desenvolvedor front-end<span class="highlight-color">.</span></h1>
+        <a href="#contact" class="hero__contact-button">Contato</a>
+      </div>
+    </section>
+    <section id="about-me">
+      <div class="about-me__content">
+        <h2>Sobre mim</h2>
+        <p>
+          Meu nome é Eric Mescouto e tenho 23 anos. Estou cursando Sistemas de Informação na Universidade Federal do Pará. Sou apaixonado por tecnologia e estou sempre em busca de novos desafios. Inscrevi-me no processo seletivo do Santander Coders, em parceria com a Ada Tech, para aprimorar as minhas habilidades e buscar novos conhecimentos. Além disso, sou uma pessoa proativa, organizada e comprometida com o que faço. Estou sempre disposto a ajudar e aprender com os outros.
+        </p>
+      </div>
+    </section>
+    <section id="experiences">
+      <div class="experiences__content">
+        <h2>Experiências</h2>
+        <table>
+          <thead class="experiences__titles">
+            <tr>
+              <th>Empresa</th>
+              <th>Descrição</th>
+              <th>Tecnologias</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="alinhar__meio">
+                <img src="./assets/images/img/ebay-logo.svg" alt="ebay logo" class="experiences__logo">
+              </td>
+              <td>Liderei o desenvolvimento de uma plataforma de e-commerce escalável que aumentou as vendas online da empresa em 35%. Trabalhei de perto com a equipe de UX/UI para garantir uma experiência de usuário fluida e integrei diversos gateways de pagamento para atender a uma base de clientes global.</td>
+              <td>Python, Django, JavaScript, React, PostgreSQL</td>
+            </tr>
+            <tr class="highlight">
+              <td class="alinhar__meio">
+                <img src="./assets/images/img/aws-logo.svg" alt="AWS logo" class="experiences__logo">
+              </td>
+              <td class="spacer">Contribuí para o desenvolvimento de uma API de alto desempenho para uma plataforma de análise de dados em tempo real usada por empresas da Fortune 500. Otimizei a arquitetura de backend, reduzindo o tempo de recuperação de dados em 50% e aprimorando a estabilidade geral do sistema.</td>
+              <td>Java, Spring Boot, RESTful APIs, MySQL, Docker, Kubernetes</td>
+            </tr>
+            <tr>
+              <td class="alinhar__meio">
+                <img src="./assets/images/img/google-logo.svg" alt="Google logo" class="experiences__logo">
+              </td>
+              <td>Desenvolvi e mantive uma ferramenta colaborativa de gerenciamento de projetos que permitiu que equipes remotas trabalhassem de forma mais eficiente. Implementei recursos como rastreamento de tarefas, notificações em tempo real e painéis personalizáveis, melhorando a produtividade da equipe em 20%.</td>
+              <td>Node.js, Express.js, Angular, MongoDB, AWS, Git</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="languages__content">
+        <h2>Idiomas</h2>
+        <ul class="languages__items">
+          <li>Português: Nativo
+            <div class="languages__progress-bar lang-pt"></div>
+          </li>
+          <li>Inglês: Avançado
+            <div class="languages__progress-bar lang-en"></div>
+          </li>
+          <li>Espanhol: Intermediário
+            <div class="languages__progress-bar lang-es"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="company-ranking">
+      <div class="company-ranking__items">
+        <h2>Empresas que gostaria de trabalhar</h2>
+        <div>
+          <ol>
+            <li class="company-ranking__item">
+              <img src="./assets/images/img/ada-logo.svg" alt="AdaTech logo" class="company-ranking__image">Ada Tech
+            </li>
+            <li class="company-ranking__item">
+              <img src="./assets/images/img/santander-logo.svg" alt="Santander logo" class="company-ranking__image">Santander
+            </li>
+            <li class="company-ranking__item">
+              <img src="./assets/images/img/microsoft-logo.svg" alt="Microsoft logo" class="company-ranking__image">Microsoft
+            </li>
+            <li class="company-ranking__item">
+              <img src="./assets/images/img/aws-logo.svg" alt="AWS logo" class="company-ranking__image">Amazon Web Services
+            </li>
+            <li class="company-ranking__item">
+              <img src="./assets/images/img/apple-logo.svg" alt="Apple logo" class="company-ranking__image">Apple
+            </li>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact__section">
+        <h2 class="contact__header">Contato</h2>
+        <p class="contact__description">
+          Estou interessado em oportunidades de trabalho, especialmente em projetos desafiadores que me permitam utilizar e expandir minhas habilidades. No entanto, se você tiver outra solicitação ou pergunta, não hesite em entrar em contato comigo.
+        </p>
+        <div class="contact__links">
+          <a href="https://github.com/ectomous" class="contact__link">
+            <img src="./assets/images/icon/github-icon.svg" alt="GitHub Icon" class="media media__icon">
+            <p>github.com/ectomous</p>
+          </a>
+          <a href="https://www.linkedin.com/in/eric-mescouto/" class="contact__link">
+            <img src="./assets/images/icon/linkedin-icon.svg" alt="Linkedin Icon" class="media media__icon">
+            <p>linkedin.com/in/eric-mescouto</p>
+          </a>
+          <a href="mailto:h.ericmescouto@gmail.com" class="contact__link">
+            <img src="./assets/images/icon/mail-icon.svg" alt="Email Icon" class="media media__icon">
+            <p>h.ericmescouto@gmail.com</p>
+          </a>
+        </div>
+      </div>
+      <div class="contact__form">
+        <form method="POST" class="form">
+          <div class="form__group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Insira o seu nome" required>
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" type="email" class="form__input" placeholder="Insira um e-mail válido" required>
+          </div>
+          <div class="form__group">
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" class="form__textarea" placeholder="Insira a sua mensagem" required></textarea>
+          </div>
+          <button type="submit" class="form__submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__copyright">&copy; 2024 Eric Mescouto <span class="highlight-color">|</span> All rights reserved
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
